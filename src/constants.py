@@ -1,5 +1,5 @@
 
-# This file contains the most important
+# This file declares the most important
 # mathematical constants.
 
 pi = 3.141592653589793
