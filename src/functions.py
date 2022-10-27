@@ -1,7 +1,4 @@
 
-from re import L
-
-
 def sum_arr(array: list):
     """ Returns a sum of the array elements """
 
@@ -34,6 +31,7 @@ def product_arr(array: list):
     return prod
 
 
+# TODO (wedkarz): implement a better algorithm
 def fact(number: int):
     if type(number) is not int:
         raise TypeError("Invalid input provided. Int type argument expected.")
