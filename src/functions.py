@@ -1,4 +1,7 @@
 
+from re import L
+
+
 def sum_arr(array: list):
     """ Returns a sum of the array elements """
 
@@ -29,3 +32,14 @@ def product_arr(array: list):
         prod *= element
 
     return prod
+
+
+def fact(number: int):
+    if type(number) is not int:
+        raise TypeError("Invalid input provided. Int type argument expected.")
+    
+    factorial = 1
+    for i in range(1, number + 1):
+        factorial *= i
+
+    return factorial
