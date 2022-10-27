@@ -33,6 +33,8 @@ def product_arr(array: list):
 
 # TODO (wedkarz): implement a better algorithm
 def fact(number: int):
+    """ Returns a factorial of the input integer """
+
     if type(number) is not int:
         raise TypeError("Invalid input provided. Int type argument expected.")
     
