@@ -7,3 +7,5 @@ try:
     from src.functions import *
 except:
     raise ImportError("Module files not found. Make sure all files are included properly.")
+
+print(exponent(2, 12))
