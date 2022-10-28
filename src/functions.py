@@ -1,7 +1,4 @@
 
-from tkinter import Y
-
-
 def sum_arr(array: list):
     # Returns a sum of the array elements
 
@@ -65,11 +62,11 @@ def exponent(base: int, exp: int):
     while exp > 1:
         if exp & 1 == 0:
             base *= base
-            exp = exp / 2
+            exp = exp // 2
         else:
             tmp *= base
             base *= base
-            exp = (exp - 1) / 2
+            exp = (exp - 1) // 2
     
     return base * tmp
 
