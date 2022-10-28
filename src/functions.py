@@ -70,3 +70,11 @@ def exponent(base: int, exp: int):
     
     return base * tmp
 
+
+# TODO (wedkarz): add type checking
+def normalize(value: float, min: float, max: float):
+    # Returns a value rescaled to the range of <0, 1>
+    # Using rescaling (min-max normalization)
+    # https://en.wikipedia.org/wiki/Feature_scaling
+
+    return (value - min) / (max - min)
