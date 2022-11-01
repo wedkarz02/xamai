@@ -1,4 +1,5 @@
 __all__ = [
     "constants",
-    "functions"
+    "functions",
+    "sorting"
 ]
