@@ -78,3 +78,10 @@ def normalize(value: float, min: float, max: float):
     # https://en.wikipedia.org/wiki/Feature_scaling
 
     return (value - min) / (max - min)
+
+
+# TODO (wedkarz): add type checking
+def swap(array: list, a: int, b: int):
+    # Swaps the array values at the index a and b
+
+    array[a], array[b] = array[b], array[a]
