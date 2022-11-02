@@ -45,11 +45,13 @@ def fact(number: int):
     return factorial
 
 
-# TODO (wedakrz): add invalid input checking
 def exponent(base: int, exp: int):
     # Returns a value of an integer base raised to an integer exponent
     # Using exponentation by squaring algorithm
     # https://en.wikipedia.org/wiki/Exponentiation_by_squaring
+
+    if type(base) is not int or type(exp) is not int:
+        raise TypeError("Invalid input provided. Int type arguments expected.")
 
     if exp < 0:
         base = 1 / base
@@ -71,17 +73,25 @@ def exponent(base: int, exp: int):
     return base * tmp
 
 
-# TODO (wedkarz): add type checking
 def normalize(value: float, min: float, max: float):
     # Returns a value rescaled to the range of <0, 1>
     # Using rescaling (min-max normalization)
     # https://en.wikipedia.org/wiki/Feature_scaling
 
+    types = [int, float]
+    if type(value) not in types or type(min) not in types or type(max) not in types:
+        raise TypeError("Invalid input provided. Int or float type argument expected.")
+
     return (value - min) / (max - min)
 
 
-# TODO (wedkarz): add type checking
 def swap(array: list, a: int, b: int):
     # Swaps the array values at the index a and b
+
+    if type(array) is not list:
+        raise TypeError("Invalid input provided. List type argument expected.")
+    
+    if type(a) is not int or type(b) is not int:
+        raise TypeError("Invalid input provided. Int type arguments expected.")
 
     array[a], array[b] = array[b], array[a]
