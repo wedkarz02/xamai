@@ -6,5 +6,5 @@ try:
     from src.constants import *
     from src.functions import *
     from src.sorting import *
-except:
-    raise ImportError("Module files not found. Make sure all files are included properly.")
+except ModuleNotFoundError:
+    print("[ERROR]: Module files not found. Make sure all files are included properly.")
