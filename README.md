@@ -14,7 +14,7 @@ or use the "Download ZIP" option from the [GitHub page](https://github.com/wedka
 
 # Usage
 
-To use XAMAI properly you need to insert an <u>absolute path</u> of the parent directory of XAMAI to **sys.path** of your script. The way of doing this highly depends on your project setup and XAMAI package location. \
+To use XAMAI properly you need to insert an absolute path of the parent directory of XAMAI to **sys.path** of your script. The way of doing this highly depends on your project setup and XAMAI package location. \
 Consider this example:
 ```
 projects/
@@ -26,7 +26,7 @@ projects/
 |---- xamai/
 ```
 In this example the parent directory of *xamai/* is **projects/**, so in order to use XAMAI in *main.py* you would need to insert an absolute path to **projects/** in **sys.path** of the *main.py* file. \
-Since *main.py* and *xamai/* share the same parent directory the easiest way of doing it would be writing this code snippet in *main.py/* :
+Since *test_project/* and *xamai/* share the same parent directory the easiest way of doing it would be writing this code snippet in *main.py/* :
 ```python
 import sys
 import pathlib
