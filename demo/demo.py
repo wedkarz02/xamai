@@ -1,17 +1,17 @@
 
-# Demo file created for functionality testing
+# Demo file created for functionality testing.
+# 
+# Adding a parent path of the main package to sys.path
+# See README.md for more information.
 
-import os
 import sys
-import inspect
+import pathlib
 
-# Importing a parent directory
-current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parent_dir = os.path.dirname(current_dir)
+package_path = str(pathlib.Path(__file__).resolve().parents[2])
+sys.path.insert(0, package_path)
 
-sys.path.insert(0, parent_dir)
 
-# Actual demo:
+# Actual demo starts here:
 import xamai
 
 print(xamai.pi)
