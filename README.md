@@ -38,3 +38,4 @@ sys.path.insert(0, package_path)
 # You can import it as a normal package.
 import xamai
 ```
+For more information about python imports I highly recommend reading [this article](https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html) by [Chris Yeh](https://chrisyeh96.github.io/) as well as the [python documentation](https://docs.python.org/3/tutorial/modules.html).
