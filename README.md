@@ -14,6 +14,18 @@ or use the "Download ZIP" option from the [GitHub page](https://github.com/wedka
 
 # Usage
 
+The easiest way of setting up XAMAI is downloading the repository directly into the project directory. After that it becomes available as a regular package and can be imported with:
+```python
+import xamai
+```
+<br />
+If you don't want to download the package into your project directory please read the following instructions.
+
+
+---
+
+<br />
+
 To use XAMAI properly you need to insert an absolute path of the parent directory of XAMAI to **sys.path** of your script. The way of doing this highly depends on your project setup and XAMAI package location. \
 Consider this example:
 ```
