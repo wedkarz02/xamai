@@ -36,7 +36,7 @@ projects/
 |---- xamai/
 ```
 In this example the parent directory of *xamai/* is **projects/**, so in order to use XAMAI in *main.py* you would need to insert an absolute path to **projects/** in **sys.path** of the *main.py* file. \
-Since *test_project/* and *xamai/* share the same parent directory the easiest way of doing it would be writing this code snippet in *main.py/* :
+Since *test_project/* and *xamai/* share the same parent directory the easiest way of doing it would be writing this code snippet in *main.py* :
 ```python
 import sys
 import pathlib
