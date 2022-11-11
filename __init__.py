@@ -8,3 +8,5 @@
 from xamai.src.constants import *
 from xamai.src.functions import *
 from xamai.src.sorting import *
+
+consts = Constants()
