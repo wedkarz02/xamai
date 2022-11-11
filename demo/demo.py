@@ -28,3 +28,4 @@ print(nums_normalized)
 
 vals = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(xamai.sum_range(vals, 0, 3))
+print(xamai.product_range(vals, 0, 4))
