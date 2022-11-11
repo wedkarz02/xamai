@@ -2,7 +2,7 @@
 def sum_range(array: list, start: int, end: int):
     # Returns a sum of the array elements in the range of <start, end>
 
-    if type(array) is not list :
+    if type(array) is not list:
         raise TypeError("Invalid input provided. List type argument expected.")
     
     if type(start) is not int or type(end) is not int:
@@ -18,18 +18,21 @@ def sum_range(array: list, start: int, end: int):
     return sum
 
 
-def product_arr(array: list):
+def product_range(array: list, start: int, end: int):
     # Returns a multiplication of the array elements
 
     if type(array) is not list:
         raise TypeError("Invalid input provided. List type argument expected.")
     
-    prod = array[0]
-    for element in array:
-        if type(element) not in [int, float]:
+    if type(start) is not int or type(end) is not int:
+        raise TypeError("Invalid input provided. Int type arguments expected.")
+
+    prod = array[start]
+    for i in range(start, end):
+        if type(array[i]) not in [int, float]:
             raise TypeError("Invalid input provided. Every array element must be a real number.")
         
-        prod *= element
+        prod *= array[i]
 
     return prod
 
