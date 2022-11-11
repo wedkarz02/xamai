@@ -14,7 +14,7 @@ sys.path.insert(0, package_path)
 # Actual demo starts here:
 import xamai
 
-print(xamai.pi)
+print(xamai.consts.pi)
 print(xamai.exponent(2, 6))
 
 lst = [9, 5, 4, 3, 7, 4, 65, 1, 0]
