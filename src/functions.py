@@ -1,16 +1,19 @@
 
-def sum_arr(array: list):
-    # Returns a sum of the array elements
+def sum_range(array: list, start: int, end: int):
+    # Returns a sum of the array elements in the range of <start, end>
 
-    if type(array) is not list:
+    if type(array) is not list :
         raise TypeError("Invalid input provided. List type argument expected.")
+    
+    if type(start) is not int or type(end) is not int:
+        raise TypeError("Invalid input provided. Int type arguments expected.")
 
     sum = 0
-    for element in array:
-        if type(element) not in [int, float]:
+    for i in range(start, end):
+        if type(array[i]) not in [int, float]:
             raise TypeError("Invalid input provided. Every array element must be a real number.")
         
-        sum += element
+        sum += array[i]
     
     return sum
 
