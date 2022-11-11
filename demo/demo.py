@@ -25,5 +25,3 @@ nums = [1, 2, 3, 4, 5]
 nums_normalized = [xamai.normalize(x, 0, 5) for x in nums]
 print(nums)
 print(nums_normalized)
-
-print("asdf")
