@@ -25,3 +25,6 @@ nums = [1, 2, 3, 4, 5]
 nums_normalized = [xamai.normalize(x, 0, 5) for x in nums]
 print(nums)
 print(nums_normalized)
+
+vals = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(xamai.sum_range(vals, 0, 3))
