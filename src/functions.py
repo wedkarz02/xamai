@@ -51,12 +51,12 @@ def fact(number: int):
     return factorial
 
 
-def exponent(base: int, exp: int):
-    # Returns a value of an integer base raised to an integer exponent
+def exponent(base: float, exp: int):
+    # Returns a value of base raised to an integer exponent
     # Using exponentation by squaring algorithm
     # https://en.wikipedia.org/wiki/Exponentiation_by_squaring
 
-    if type(base) is not int or type(exp) is not int:
+    if type(base) not in [int, float] or type(exp) is not int:
         raise TypeError("Invalid input provided. Int type arguments expected.")
 
     if exp < 0:
