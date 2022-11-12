@@ -19,7 +19,7 @@ def sum_range(array: list, start: int, end: int):
 
 
 def product_range(array: list, start: int, end: int):
-    # Returns a multiplication of the array elements
+    # Returns a multiplication of the array elements in the range of <start, end>
 
     if type(array) is not list:
         raise TypeError("Invalid input provided. List type argument expected.")
