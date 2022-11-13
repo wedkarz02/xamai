@@ -1,5 +1,5 @@
 
-#TODO (wedkarz): Add documentation
+#TODO (wedkarz): Add documentation and result rounding
 def sin_ts(angle: float, n: int):
     tmp = angle
     sine = tmp
