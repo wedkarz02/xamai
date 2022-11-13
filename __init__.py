@@ -8,5 +8,6 @@
 from xamai.src.constants import *
 from xamai.src.functions import *
 from xamai.src.sorting import *
+from xamai.src.trigonometry import *
 
 consts = Constants()
