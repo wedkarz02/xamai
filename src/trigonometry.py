@@ -1,4 +1,7 @@
 
+from .functions import fact
+
+# TODO (wedkarz): Add type checking
 def sin_ts(angle: float, n: int):
     # Returns a sine of the given angle (in radians)
     # calculated by using a simplified version
@@ -15,3 +18,14 @@ def sin_ts(angle: float, n: int):
         sine += tmp
     
     return sine
+
+
+# TODO (wedkarz): Add documentation and type checking
+def cos_ts(angle: float, n: int):
+    cosine = 0.0
+
+    for i in range(n):
+        cosine += (((-1) ** i) / (fact(2 * i))) * (angle ** (2 * i))
+    
+    return cosine
+
