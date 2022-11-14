@@ -17,7 +17,7 @@ def sin_ts(angle: float, n: int):
         tmp *= mult
         sine += tmp
     
-    return sine
+    return round(sine, 10)
 
 
 # TODO (wedkarz): Add documentation and type checking
@@ -27,5 +27,5 @@ def cos_ts(angle: float, n: int):
     for i in range(n):
         cosine += (((-1) ** i) / (fact(2 * i))) * (angle ** (2 * i))
     
-    return cosine
+    return round(cosine, 10)
 
