@@ -33,3 +33,7 @@ print(xamai.product_range(vals, 0, 4))
 print(xamai.sin_ts(xamai.consts.pi / 4, 10))
 print(xamai.sin_ts(xamai.consts.pi / 2, 10))
 print(xamai.sin_ts(xamai.consts.pi, 10))
+
+print(xamai.cos_ts(xamai.consts.pi, 10))
+print(xamai.cos_ts(xamai.consts.pi / 2, 10))
+print(xamai.cos_ts(-xamai.consts.pi / 2, 10))
