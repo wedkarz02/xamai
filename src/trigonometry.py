@@ -1,13 +1,18 @@
 
 from .functions import fact
 
-# TODO (wedkarz): Add type checking
 def sin_ts(angle: float, n: int):
     # Returns a sine of the given angle (in radians)
     # calculated by using a simplified version
     # of the Taylor series
     # (without the need for factorial functions)
     # https://en.wikipedia.org/wiki/Taylor_series#Trigonometric_functions
+
+    if type(angle) not in [float, int]:
+        raise TypeError("Invalid input provided. Angle must be a real number.")
+
+    if type(n) is not int:
+        raise TypeError("Invalid input provided. Int type argument expected.")
 
     tmp = angle
     sine = tmp
@@ -20,8 +25,17 @@ def sin_ts(angle: float, n: int):
     return round(sine, 10)
 
 
-# TODO (wedkarz): Add documentation and type checking
 def cos_ts(angle: float, n: int):
+    # Returns a cosine of the given angle (in radians)
+    # calculated by using the Taylor series
+    # https://en.wikipedia.org/wiki/Taylor_series#Trigonometric_functions
+
+    if type(angle) not in [float, int]:
+        raise TypeError("Invalid input provided. Angle must be a real number.")
+
+    if type(n) is not int:
+        raise TypeError("Invalid input provided. Int type argument expected.")
+
     cosine = 0.0
 
     for i in range(n):
