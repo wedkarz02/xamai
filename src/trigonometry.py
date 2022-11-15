@@ -43,3 +43,8 @@ def cos_ts(angle: float, n: int):
     
     return round(cosine, 10)
 
+
+def tg_ts(angle: float, n: int):
+    pass
+
+# TODO (wddkarz): Add a tg and ctg functions
