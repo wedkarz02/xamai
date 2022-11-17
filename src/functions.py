@@ -111,4 +111,7 @@ def swap(array: list, a: int, b: int):
 def deg_to_rad(angle: float):
     # Returns an angle in radians converted from degrees
 
+    if type(angle) not in [float, int]:
+        raise TypeError("Invalid input provided. Angle must be a real number.")
+
     return angle * (consts.pi / 180)
