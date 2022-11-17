@@ -37,3 +37,5 @@ print(xamai.sin_ts(xamai.consts.pi, 10))
 print(xamai.cos_ts(xamai.consts.pi, 10))
 print(xamai.cos_ts(xamai.consts.pi / 2, 10))
 print(xamai.cos_ts(-xamai.consts.pi / 2, 10))
+
+print(xamai.deg_to_rad((360)))
