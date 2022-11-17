@@ -1,4 +1,9 @@
 
+from .constants import Constants
+
+consts = Constants()
+
+
 def sum_range(array: list, start: int, end: int):
     # Returns a sum of the array elements in the range of <start, end>
 
@@ -101,3 +106,9 @@ def swap(array: list, a: int, b: int):
         raise TypeError("Invalid input provided. Int type arguments expected.")
 
     array[a], array[b] = array[b], array[a]
+
+
+def deg_to_rad(angle: float):
+    # Returns an angle in radians converted from degrees
+
+    return angle * (consts.pi / 180)
