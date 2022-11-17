@@ -115,3 +115,12 @@ def deg_to_rad(angle: float):
         raise TypeError("Invalid input provided. Angle must be a real number.")
 
     return angle * (consts.pi / 180)
+
+
+def rad_to_deg(angle: float):
+    # Returns an angle in degrees converted from radians
+
+    if type(angle) not in [float, int]:
+        raise TypeError("Invalid input provided. Angle must be a real number.")
+
+    return angle * (180 / consts.pi)
