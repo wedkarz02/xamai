@@ -1,6 +1,7 @@
 
 from .functions import swap
 
+# TODO (wedkarz): add type checking
 
 def bubble_sort(array: list):
     # Sorts the array values using
