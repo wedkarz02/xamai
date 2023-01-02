@@ -1,12 +1,14 @@
 
 from .functions import swap
 
-# TODO (wedkarz): add type checking
 
 def bubble_sort(array: list):
     # Sorts the array values using
     # the Bubble sorting algorithm
     # https://en.wikipedia.org/wiki/Bubble_sort
+    
+    if type(array) is not list:
+        raise TypeError("Invalid input provided. List type argument expected.")
 
     for i in range(len(array) - 1):
         for j in range(len(array) - i - 1):
@@ -19,6 +21,12 @@ def quick_sort(array: list, start: int, end: int):
     # the Lomuto Partition scheme
     # of the Quick sorting algorithm
     # https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
+
+    if type(array) is not list:
+        raise TypeError("Invalid input provided. List type argument expected.")
+
+    if type(start) is not int or type(end) is not int:
+        raise TypeError("Invalid input provided. Int type arguments expected.")
 
     if start >= end or start < 0:
         return
