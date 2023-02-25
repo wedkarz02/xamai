@@ -1,5 +1,6 @@
 # XAMAI Academic Math and Algorithm Implementation
 
+**Please note that this is a work in progress project that may still contain bugs and missing features.**
 Detailed description not available yet.<br /><br />
 
 The source for this project is avaliable [here](https://github.com/wedkarz02/xamai).
